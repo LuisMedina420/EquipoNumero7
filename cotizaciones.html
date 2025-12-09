@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TARUMA ARQUITECTOS - Cotizaciones</title>
+  <link rel="stylesheet" href="CSS/Style_csscotizaciones.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+  <a href="#" class="logo">
+    <img src="IMAGENES/LOGO.jpg" alt="Logo TARUMA">
+  </a>
+
+  <div class="header-inner">
+    
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="portafolio.html" class="active">Portafolio</a></li>
+                <li><a href="procesos.html">Procesos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proDestacados.html">Proyectos Destacados</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="Blog.html">Blog/Noticias</a></li>
+                <li><a href="Contacto.html">Contactos</a></li>
+                <li><a href="cotizaciones.html">Cotizaciones</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+</header>
+
+  <!-- (Hero eliminado para la página de cotizaciones; se muestra sólo el formulario) -->
+
+  <!-- FORMULARIO DE COTIZACIONES (single modern form) -->
+  <section class="section alt">
+    <div class="container">
+      <div class="form-page">
+        
+          <h1>Solicita tu Cotización</h1>
+          <p class="lead">Completa el formulario y recibe una respuesta personalizada.</p>
+      
+
+        <form id="cotizacionForm" class="cotizacion-form" action="#" method="GET" novalidate>
+          <div class="row">
+            <label for="tipo">Tipo de proyecto</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecciona...</option>
+              <option value="casa">Casa</option>
+              <option value="edificio">Edificio</option>
+              <option value="remodelacion">Remodelación</option>
+            </select>
+          </div>
+
+          <div class="row two-col">
+            <div>
+              <label for="superficie">Superficie aproximada (m²)</label>
+              <input type="number" id="superficie" name="superficie" placeholder="Ej: 120" min="1" required>
+            </div>
+            <div>
+              <label for="presupuesto">Presupuesto estimado</label>
+              <input type="text" id="presupuesto" name="presupuesto" placeholder="Ej: L50,000" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+            <small class="field-note">Se usará para enviarte la confirmación de recepción y para recibir la cotización por este correo.</small>
+          </div>
+
+          <div class="row">
+            <label for="plazos">Plazos deseados</label>
+            <input type="text" id="plazos" name="plazos" placeholder="Ej: 6 meses" required>
+          </div>
+
+          <div class="row">
+            <label for="imagenes">Adjuntar imágenes del terreno / espacio</label>
+            <input type="file" id="imagenes" name="imagenes[]" multiple accept="image/*">
+            <br><br>
+            <small class="field-note">Nota: en este demo los archivos NO se adjuntan al correo. Adjúntalos manualmente si los necesitas.</small>
+          </div>
+
+          <div class="row actions">
+            <button type="submit" class="submit-btn">Enviar Cotización</button>
+            <a href="index.html" class="btn-outline">Volver al inicio</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO POSTERIOR -->
+  <section class="section">
+    <div class="container">
+      <h3>Proceso Posterior al Envío</h3>
+      <p>Una vez recibido tu formulario, nuestro equipo revisará la información y se pondrá en contacto contigo en un plazo máximo de 48 horas hábiles.</p>
+      <p>Se agendará una reunión inicial para definir detalles, requisitos y posibles ajustes del proyecto.</p>
+
+      <h3>Tiempos de Respuesta</h3>
+      <ul>
+        <li>Confirmación de recepción: Inmediata</li>
+        <li>Contacto del arquitecto responsable: Máximo 48 horas hábiles</li>
+        <li>Entrega de cotización preliminar: 5 días hábiles</li>
+      </ul>
+
+      <h3>Requisitos Previos</h3>
+      <ul>
+        <li>Medidas aproximadas del terreno / espacio</li>
+        <li>Documentación de propiedad (si aplica)</li>
+        <li>Referencias o ideas de diseño (opcional)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© TARUMA ARQUITECTOS. Todos los derechos reservados.</p>
+    </div>
+
+  </footer>
+
+  <script src="JAVA/jsindex.js"></script>
+
+</body>
+</html>
