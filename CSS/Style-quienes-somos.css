@@ -1,0 +1,244 @@
+:root {
+  --bg: #e0e0e0;
+  --text: #1f2937;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --muted: #6b7280;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);  
+  color: var(--text);     
+  line-height: 1.6;
+  padding: 0;
+}
+
+
+header {
+  position: relative;
+  background: rgb(19, 31, 39); 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px; 
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: left;
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+  margin-left: 160px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+  color: #1CC5A3; 
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    background: #13212A;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 10px;
+  }
+}
+
+
+.quienes-somos {
+  padding: 50px 8%;
+}
+
+.quienes-somos .intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1CC5A3; 
+}
+
+.quienes-somos p {
+  line-height: 1.7;
+  color: #333333; 
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.mision-vision .card {
+  background: #F5F5F5; 
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 280px;
+}
+
+.mision-vision .card h3 {
+  color: #1CC5A3;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.mision-vision .card p {
+  color: #333333;
+}
+
+.valores h2 {
+  font-size: 2.2rem;
+  color: #1CC5A3;
+  margin: 40px 0 20px;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.valor {
+  background: #F5F5F5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  color: #333333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.equipo h2,
+.filosofia h2 {
+  color: #1CC5A3;
+}
+.equipo{
+  padding: 60px 8%;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+
+.miembro {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.miembro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.miembro img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.miembro:hover img {
+  transform: scale(1.05);
+}
+
+.miembro h4 {
+  margin: 10px 0 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.miembro span {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.filosofia {
+  margin-top: 50px;
+  padding: 25px;
+  background: #F5F5F5; 
+  border-radius: 12px;
+  color: #333333;
+}
